@@ -1,0 +1,36 @@
+http://ifeve.com/buffers/
+
+Channel
+这些是Java NIO中最重要的通道的实现：
+
+FileChannel
+DatagramChannel
+SocketChannel
+ServerSocketChannel
+FileChannel 从文件中读写数据。
+
+DatagramChannel 能通过UDP读写网络中的数据。
+
+SocketChannel 能通过TCP读写网络中的数据。
+
+ServerSocketChannel可以监听新进来的TCP连接，像Web服务器那样。对每一个新进来的连接都会创建一个SocketChannel。
+
+
+Buffer的capacity,position和limit
+缓冲区本质上是一块可以写入数据，然后可以从中读取数据的内存。这块内存被包装成NIO Buffer对象，并提供了一组方法，用来方便的访问该块内存。
+
+为了理解Buffer的工作原理，需要熟悉它的三个属性：
+
+capacity
+position
+limit
+
+flip(); //Buffer从写模式切换到读模式
+allocate(int ..); //分配
+xxChannel.read(buf);/buf.put(int ..); //向Buffer中写数据
+xxChannel.write(buf);/buf.get(); //向Buffer中读数据
+rewind(); //重置position，limit不变
+clear();compact(); //clear直接清空；compact会把未读取的数据放到下次Buffer的起始处
+mark()和reset(); //标记一个点，reset重置到这个点
+equals()与compareTo();
+

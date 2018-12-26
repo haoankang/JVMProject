@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chapter_2/Chapter_2.iml" filepath="$PROJECT_DIR$/Chapter_2/Chapter_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_3/Chapter_3.iml" filepath="$PROJECT_DIR$/Chapter_3/Chapter_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Design_Mode/Design_Mode.iml" filepath="$PROJECT_DIR$/Design_Mode/Design_Mode.iml" />
       <module fileurl="file://$PROJECT_DIR$/JVMProject.iml" filepath="$PROJECT_DIR$/JVMProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NIO_Demo/NIO_Demo.iml" filepath="$PROJECT_DIR$/NIO_Demo/NIO_Demo.iml" />
     </modules>
   </component>
 </project>
