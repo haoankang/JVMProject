@@ -9,7 +9,7 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.StandardCharsets;
 
-public class ServerHandler implements Runnable{
+public class ServerHandler{
 
     SelectionKey selectionKey;
 
@@ -17,7 +17,6 @@ public class ServerHandler implements Runnable{
         this.selectionKey = selectionKey;
     }
 
-    @Override
     public void run() {
         SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
@@ -27,7 +26,7 @@ public class ServerHandler implements Runnable{
                 System.out.println("rece.."+new String(byteBuffer.array(), StandardCharsets.UTF_8));
                 cap = socketChannel.read(byteBuffer);
             }
-
+            socketChannel.register(selectionKey.selector(), SelectionKey.OP_WRITE);
         } catch (IOException e) {
             e.printStackTrace();
         }

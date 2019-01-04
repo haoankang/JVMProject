@@ -15,9 +15,12 @@
     <bytecodeTargetLevel target="1.8">
       <module name="Chapter_2" target="1.5" />
       <module name="Chapter_3" target="1.5" />
-      <module name="Design_Mode" target="8" />
+      <module name="Design_Mode" target="1.5" />
       <module name="JVMProject" target="8" />
       <module name="NIO_Demo" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
   </component>
 </project>

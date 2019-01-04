@@ -28,7 +28,7 @@ limit
 flip(); //Buffer从写模式切换到读模式
 allocate(int ..); //分配
 xxChannel.read(buf);/buf.put(int ..); //向Buffer中写数据
-xxChannel.write(buf);/buf.get(); //向Buffer中读数据
+xxChannel.write(buf);/buf.get(); //从Buffer中读数据
 rewind(); //重置position，limit不变
 clear();compact(); //clear直接清空；compact会把未读取的数据放到下次Buffer的起始处
 mark()和reset(); //标记一个点，reset重置到这个点
