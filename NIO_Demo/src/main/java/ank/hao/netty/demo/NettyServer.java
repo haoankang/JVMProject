@@ -6,7 +6,6 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.util.ReferenceCountUtil;
 
 /**
  * a simple netty server demo
@@ -49,7 +48,7 @@ class ChildChannelHandler extends ChannelInitializer<SocketChannel> {
 
 class TimeServerHadler extends ChannelInboundHandlerAdapter {
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+    public void channelActive(final ChannelHandlerContext ctx) throws Exception {
         final ByteBuf time = ctx.alloc().buffer(4);
         time.writeInt((int)(System.currentTimeMillis()/1000L +2208988800L));
         final ChannelFuture f = ctx.writeAndFlush(time);

@@ -28,7 +28,7 @@ public class Server {
             Socket socket = null;
             while (true){
                 socket = serverSocket.accept();
-                Socket finalSocket = socket;
+                final Socket finalSocket = socket;
                 new Thread(new Runnable() {
 
                     @Override

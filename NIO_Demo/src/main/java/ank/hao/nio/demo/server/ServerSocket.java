@@ -13,7 +13,7 @@ public class ServerSocket {
             serverSocketChannel.bind(new InetSocketAddress(9911));
             serverSocketChannel.configureBlocking(false);
 
-            Selector selector = Selector.open();
+            final Selector selector = Selector.open();
             serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
 
             new Thread(new Runnable() {

@@ -29,7 +29,7 @@ class AIOServerAcceptHandler implements Runnable{
 
             asynchronousServerSocketChannel.accept(this, new CompletionHandler<AsynchronousSocketChannel, AIOServerAcceptHandler>() {
                 @Override
-                public void completed(AsynchronousSocketChannel result, AIOServerAcceptHandler attachment) {
+                public void completed(final AsynchronousSocketChannel result, AIOServerAcceptHandler attachment) {
                     attachment.asynchronousServerSocketChannel.accept(attachment, this);
                     ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                     result.read(byteBuffer, byteBuffer, new CompletionHandler<Integer, ByteBuffer>() {

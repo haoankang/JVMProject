@@ -8,16 +8,26 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter_2" />
         <module name="Chapter_3" />
+        <module name="Concurrency_Program" />
         <module name="Design_Mode" />
+        <module name="JVM8" />
+        <module name="multids-mybatis" />
+        <module name="Netty_Demo" />
         <module name="NIO_Demo" />
+        <module name="Redis_Demo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel target="8">
       <module name="Chapter_2" target="1.5" />
       <module name="Chapter_3" target="1.5" />
+      <module name="Concurrency_Program" target="1.5" />
       <module name="Design_Mode" target="1.5" />
-      <module name="JVMProject" target="8" />
-      <module name="NIO_Demo" target="8" />
+      <module name="JVM8" target="1.5" />
+      <module name="JVMProject" target="1.5" />
+      <module name="multids-mybatis" target="1.5" />
+      <module name="Netty_Demo" target="1.5" />
+      <module name="NIO_Demo" target="7" />
+      <module name="Redis_Demo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

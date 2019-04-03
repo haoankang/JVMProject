@@ -18,7 +18,7 @@ public class RepackageClient {
             bootstrap.group(wokerGroup)
                     .channel(NioSocketChannel.class)
                     .option(ChannelOption.SO_KEEPALIVE, true)
-                    .handler(new RepackageClientHandler());
+                    .handler(new DecoderClientHandler());
             ChannelFuture channelFuture = bootstrap.connect(new InetSocketAddress(8814)).sync();
             channelFuture.channel().closeFuture().sync();
         } catch (InterruptedException e) {

@@ -13,7 +13,20 @@
         <module>Chapter_3</module>
         <module>Design_Mode</module>
         <module>NIO_Demo</module>
+        <module>Netty_Demo</module>
+        <module>Concurrency_Program</module>
+        <module>Redis_Demo</module>
+        <module>JVM8</module>
+        <module>multids-mybatis</module>
     </modules>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
