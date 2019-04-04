@@ -18,6 +18,7 @@
         <module>Redis_Demo</module>
         <module>JVM8</module>
         <module>multids-mybatis</module>
+        <module>Dynamic-Datasource</module>
     </modules>
 
     <build>

@@ -10,6 +10,7 @@
         <module name="Chapter_3" />
         <module name="Concurrency_Program" />
         <module name="Design_Mode" />
+        <module name="Dynamic-Datasource" />
         <module name="JVM8" />
         <module name="multids-mybatis" />
         <module name="Netty_Demo" />
@@ -22,6 +23,7 @@
       <module name="Chapter_3" target="1.8" />
       <module name="Concurrency_Program" target="1.8" />
       <module name="Design_Mode" target="1.8" />
+      <module name="Dynamic-Datasource" target="1.8" />
       <module name="JVM8" target="1.8" />
       <module name="JVMProject" target="1.8" />
       <module name="multids-mybatis" target="1.8" />

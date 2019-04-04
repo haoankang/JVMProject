@@ -23,11 +23,11 @@
     </option>
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="javaMapperPackage" value="ank.hao.multids.mapper" />
-        <option name="javaMapperPath" value="$PROJECT_DIR$/multids-mybatis/src/main/java" />
-        <option name="javaModelPackage" value="ank.hao.multids.domain" />
-        <option name="javaModelPath" value="$PROJECT_DIR$/multids-mybatis/src/main/java" />
-        <option name="lastDatabaseCrudChooseModuleName" value="multids-mybatis" />
+        <option name="javaMapperPackage" value="ank.hao.dynamicds.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/Dynamic-Datasource/src/main/java" />
+        <option name="javaModelPackage" value="ank.hao.dynamicds.domain" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/Dynamic-Datasource/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="Dynamic-Datasource" />
         <option name="modelAddToString" value="true" />
         <option name="moduleNameToPackageAndPathMap">
           <map>
@@ -43,14 +43,26 @@
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
+            <entry key="Dynamic-Datasource">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="ank.hao.dynamicds.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/Dynamic-Datasource/src/main/java" />
+                  <option name="javaModelPacakge" value="ank.hao.dynamicds.domain" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/Dynamic-Datasource/src/main/java" />
+                  <option name="xmlPackage" value="mapperxml" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/Dynamic-Datasource/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
             <entry key="multids-mybatis">
               <value>
                 <UserPackageAndPathInfoByModule>
-                  <option name="javaMapperPackage" value="ank.hao.multids.mapper" />
+                  <option name="javaMapperPackage" value="ank.hao.multids.mapper.db2" />
                   <option name="javaMapperPath" value="$PROJECT_DIR$/multids-mybatis/src/main/java" />
                   <option name="javaModelPacakge" value="ank.hao.multids.domain" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/multids-mybatis/src/main/java" />
-                  <option name="xmlPackage" value="mapperxml" />
+                  <option name="xmlPackage" value="mapperxml.db2" />
                   <option name="xmlPath" value="$PROJECT_DIR$/multids-mybatis/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
@@ -59,12 +71,22 @@
         </option>
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="haoak:page_demo">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="PageDemo" />
+                  <option name="moduleName" value="multids-mybatis" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="haoak:student">
               <value>
                 <TableGenerateConfig>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="Student" />
-                  <option name="moduleName" value="multids-mybatis" />
+                  <option name="moduleName" value="Dynamic-Datasource" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -73,7 +95,7 @@
         </option>
         <option name="useExample" value="true" />
         <option name="xmlMapperPackage" value="mapperxml" />
-        <option name="xmlMapperPath" value="$PROJECT_DIR$/multids-mybatis/src/main/resources" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/Dynamic-Datasource/src/main/resources" />
       </ProjectProfile>
     </option>
   </component>
