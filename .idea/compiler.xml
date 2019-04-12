@@ -9,6 +9,7 @@
         <module name="Chapter_2" />
         <module name="Chapter_3" />
         <module name="Concurrency_Program" />
+        <module name="custom-ioc" />
         <module name="Design_Mode" />
         <module name="Dynamic-Datasource" />
         <module name="JVM8" />
@@ -22,6 +23,7 @@
       <module name="Chapter_2" target="1.8" />
       <module name="Chapter_3" target="1.8" />
       <module name="Concurrency_Program" target="1.8" />
+      <module name="custom-ioc" target="1.8" />
       <module name="Design_Mode" target="1.8" />
       <module name="Dynamic-Datasource" target="1.8" />
       <module name="JVM8" target="1.8" />

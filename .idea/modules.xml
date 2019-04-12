@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/NIO_Demo/NIO_Demo.iml" filepath="$PROJECT_DIR$/NIO_Demo/NIO_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Netty_Demo/Netty_Demo.iml" filepath="$PROJECT_DIR$/Netty_Demo/Netty_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis_Demo/Redis_Demo.iml" filepath="$PROJECT_DIR$/Redis_Demo/Redis_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom-ioc/custom-ioc.iml" filepath="$PROJECT_DIR$/custom-ioc/custom-ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/multids-mybatis/multids-mybatis.iml" filepath="$PROJECT_DIR$/multids-mybatis/multids-mybatis.iml" />
     </modules>
   </component>

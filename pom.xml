@@ -19,6 +19,7 @@
         <module>JVM8</module>
         <module>multids-mybatis</module>
         <module>Dynamic-Datasource</module>
+        <module>custom-ioc</module>
     </modules>
 
     <build>
