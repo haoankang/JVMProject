@@ -1,0 +1,35 @@
+{
+  "namespace": "fdl1",
+  "use": "TransFlow",
+  "filter":"isnotnull(TransFlow.stat)",
+  "key": {
+    "ns": "bsfit",
+    "dim": "acctId",
+    "on": ["TransFlow.acctId","TransFlow.stat"]
+  },
+  "flowId": "TransFlow.acctId+TransFlow.transTime",
+  "name": "XXXXXXXXXX交易金额",
+  "alias": "decreaseCountNumber",
+  "calc": {
+    "oper": "decreaseCount",
+    "on": "TransFlow.transAmt"
+  },
+  "tw": {
+    "on": "TransFlow.transTime",
+    "tw": "30d"
+  },
+  "useSchemas": [
+    {
+      "name":"TransFlow.transTime",
+      "type": "double"
+    },
+    {
+      "name":"TransFlow.transAmt",
+      "type": "long"
+    },
+    {
+      "name":"TransFlow.acctId",
+      "type": "string"
+    }
+  ]
+}

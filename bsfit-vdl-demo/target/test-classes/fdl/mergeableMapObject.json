@@ -1,0 +1,28 @@
+{
+  "calc": {
+    "mapValue": {
+      "on": "LoanPettyLoginEventObject.ip",
+      "oper": "arrayList",
+      "limit": "100"
+    },
+    "on": "LoanPettyLoginEventObject.cardNo",
+    "oper": "mergeableMapObject",
+    "limit": "100"
+  },
+  "filter": "!isEmpty(LoanPettyLoginEventObject.cardNo)",
+  "key": {
+    "dim": "银行卡号",
+    "ns": "LOAN",
+    "on": [
+      "LoanPettyLoginEventObject.cardNo"
+    ]
+  },
+  "name": "在小额贷款(登录)的同一银行卡号x自然月关联IP10银行卡号多维度统计",
+  "namespace": "cn.com.bsfit.sd.loan",
+  "tw": {
+    "on": "LoanPettyLoginEventObject.time",
+    "ts": "1M",
+    "tw": ""
+  },
+  "use": "LoanPettyLoginEventObject"
+}

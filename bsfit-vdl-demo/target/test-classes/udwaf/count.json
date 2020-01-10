@@ -1,0 +1,20 @@
+{
+  "namespace": "fdl1",
+  "use": "TransFlow",
+  "key": {
+    "ns": "bsfit",
+    "dim": "acctId",
+    "on": ["TransFlow.acctId"]
+  },
+  "flowId": "TransFlow.acctId+TransFlow.transTime",
+  "name": "某账号过去30天交易次数",
+  "alias": "countNumber",
+  "calc": {
+    "oper": "count",
+    "on": "TransFlow.transAmt"
+  },
+  "tw": {
+    "on": "TransFlow.transTime",
+    "tw": "24h"
+  }
+}

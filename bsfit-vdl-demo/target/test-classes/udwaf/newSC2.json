@@ -1,0 +1,20 @@
+{
+  "calc": {
+    "on": "BankAA03EventObject.org",
+    "oper": "arrayList"
+  },
+  "key": {
+    "dim": "用户号",
+    "ns": "BANK",
+    "on": [
+      "isdfaf(BankAA03EventObject.time1,BankAA03EventObject.time)"
+    ]
+  },
+  "name": "在手机银行(支付)的同一用户号x自然日机构去重集合",
+  "namespace": "cn.com.bsfit.sd.bank",
+  "tw": {
+
+  },
+  "use": "BankAA03EventObject",
+  "varKey": "在手机银行(支付)的同一用户号x自然日机构去重集合"
+}

@@ -1,11 +1,8 @@
 package ank.hao.ioc.context;
 
 import java.io.File;
-import java.io.FilenameFilter;
-import java.lang.annotation.Annotation;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class AnnoApplicationContext implements BeanFactory {
 

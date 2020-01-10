@@ -1,0 +1,38 @@
+{
+  "namespace": "fdl1",
+  "use": "TransFlow",
+  "filter":"isnotnull(TransFlow.stat)",
+  "key": {
+    "ns": "bsfit",
+    "dim": "acctId",
+    "on": ["TransFlow.acctId","TransFlow.stat"]
+  },
+  "flowId": "TransFlow.acctId+TransFlow.transTime",
+  "name": "某账号过去30天平均交易金额",
+  "alias": "avgNumber",
+  "calc": {
+    "oper": "avg",
+    "on": "TransFlow.transAmt"
+  },
+  "tw": {
+    "on": "TransFlow.transTime",
+    "tw": "30d"
+  },
+  "useSchemas": [
+    {
+      "name":"TransFlow.transTime",
+      "type": "double"
+    },
+    {
+      "name":"TransFlow.transAmt",
+      "type": "long"
+    },
+    {
+      "name":"TransFlow.acctId",
+      "type": "string"
+    }
+
+  ],
+  "sql": "select T1.acctId ,T1.transTime ,nvl(AVG(T2.transAmt),0) as avgNumber from TransFlow as T1 left join TransFlow as T2 on T1.acctId = T2.acctId and T1.stat = T2.stat and timeDistance(T1.transTime,T2.transTime,\"30d\")  and isnotnull(T2.stat) group by T1.acctId ,T1.transTime ",
+  "sc": "return VarBuilder.feature(\"某账号过去30天平均交易金额\",fdl1.TransFlow.class)\n    .prefix(\"acctId\", \"bsfit\")\n    .key(obj -> (obj.getAcctId() == null||obj.getStat() == null) ? null : obj.getAcctId()+\"_\"+String.valueOf(obj.getStat()) )\n    .filter(obj -> isnotnull(obj.getStat()))\n    .tw(\"30d\")\n    .time(obj -> new Date(obj.getTransTime()))\n    .apply((obj) -> new AvgNumber(obj.getTransAmt()))\n    .build();"
+}

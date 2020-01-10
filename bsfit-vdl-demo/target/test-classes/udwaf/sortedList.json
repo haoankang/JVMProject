@@ -1,0 +1,41 @@
+{
+  "filter":"isnotnull(TransFlow.stat1)",
+  "tw": {
+    "tw": "30d",
+    "tsPrecision": 1,
+    "ts": "60m",
+    "on": "TransFlow.transTime"
+  },
+  "use": "TransFlow",
+  "name": "60分钟内同用户交易金额前2位",
+  "namespace": "com",
+  "useSchemas": [{
+    "name": "TransFlow.merId",
+    "type": "String"
+    },
+    {
+      "name": "TransFlow.transTime",
+      "type": "String"
+    },
+    {
+      "name": "TransFlow.transTime",
+      "type": "Date"
+    },
+    {
+      "name": "TransFlow.transAmt",
+      "type": "Double"
+    }],
+  "calc": {
+    "limit": "3",
+    "oper": "sortedList",
+    "isDesc": true,
+    "on": "TransFlow.transAmt"
+  },
+  "alias": "sortedList",
+  "key": {
+    "ns": "PAY",
+    "dim": "用户号",
+    "on": ["TransFlow.acctId"]
+  },
+  "flowId": "TransFlow.acctId+TransFlow.transAmt"
+}

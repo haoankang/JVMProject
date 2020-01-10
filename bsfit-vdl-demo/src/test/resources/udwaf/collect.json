@@ -1,0 +1,19 @@
+{
+  "use": "TransFlow",
+  "namespace": "cn.com.bsfit.dd",
+  "filter": "isNotNull(TransFlow.stat)",
+  "key": {
+    "ns": "业务号",
+    "dim": "账户",
+    "on": ["TransFlow.acctId"]
+  },
+  "flowId": "TransFlow.acctId + TransFlow.transTime",
+  "name": "交易金额",
+  "alias": "transAmt",
+  "calc": {
+    "oper": "collect",
+    "on": "TransFlow.transAmt"
+  },
+  "tw": {
+  }
+}

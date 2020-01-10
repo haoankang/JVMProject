@@ -1,0 +1,37 @@
+{
+  "namespace": "fdl1",
+  "use": "TransFlow",
+  "filter":"isnotnull(TransFlow.stat)",
+  "key": {
+    "ns": "bsfit",
+    "dim": "acctId",
+    "on": ["TransFlow.acctId"]
+  },
+  "flowId": "TransFlow.acctId+TransFlow.transTime",
+  "name": "某账号过去30天平均交易金额",
+  "alias": "avgNumber",
+  "calc": {
+    "oper": "avg",
+    "on": "TransFlow.transAmt"
+  },
+  "tw": {
+    "on": "TransFlow.transTime",
+    "tw": "30d",
+    "ts": "420m",
+    "tsPrecision": 2
+  },
+  "useSchemas": [
+    {
+      "name":"TransFlow.transTime",
+      "type": "double"
+    },
+    {
+      "name":"TransFlow.transAmt",
+      "type": "long"
+    },
+    {
+      "name":"TransFlow.acctId",
+      "type": "string"
+    }
+  ]
+}

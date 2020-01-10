@@ -20,13 +20,29 @@
         <module>multids-mybatis</module>
         <module>Dynamic-Datasource</module>
         <module>custom-ioc</module>
+        <module>Oracle_wallet</module>
+        <module>MyClassLoader</module>
+        <module>bsfit-vdl-demo</module>
+        <module>UnsafeArrayListDemo</module>
     </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.2.2.RELEASE</version>
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

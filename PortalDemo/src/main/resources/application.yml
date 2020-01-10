@@ -1,0 +1,21 @@
+server:
+  port: 8811
+  servlet:
+    context-path: /bs/portal
+
+portal.jdbc:
+  type: mysql
+  maximumPoolSize: 10
+  jdbcUrl: jdbc:mysql://10.100.1.115:3306/bg_schedule?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+  username: root
+  password: bangsun
+
+## 分页相关
+pagehelper:
+  helper-dialect: mysql
+
+portal:
+  security:
+    actuator:
+      username: actuator
+      sha256password: 114a862e248fe7387337b293878c80833fcf6d6072896af26cb8c14ac0d19728
