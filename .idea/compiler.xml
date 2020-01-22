@@ -6,20 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter_2" />
+        <module name="bsfit-vdl-demo" />
+        <module name="MyClassLoader" />
         <module name="Chapter_3" />
-        <module name="Concurrency_Program" />
-        <module name="custom-ioc" />
-        <module name="Design_Mode" />
-        <module name="Dynamic-Datasource" />
+        <module name="Chapter_2" />
         <module name="JVM8" />
         <module name="multids-mybatis" />
-        <module name="Netty_Demo" />
         <module name="NIO_Demo" />
+        <module name="Dynamic-Datasource" />
         <module name="Redis_Demo" />
+        <module name="UnsafeArrayListDemo" />
+        <module name="Design_Mode" />
+        <module name="custom-ioc" />
+        <module name="Netty_Demo" />
+        <module name="Oracle_wallet" />
+        <module name="Concurrency_Program" />
+        <module name="SpringDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="bsfit-fldl-demo" target="1.8" />
+      <module name="bsfit-vdl-demo" target="1.8" />
       <module name="Chapter_2" target="1.8" />
       <module name="Chapter_3" target="1.8" />
       <module name="Concurrency_Program" target="1.8" />
@@ -29,9 +36,14 @@
       <module name="JVM8" target="1.8" />
       <module name="JVMProject" target="1.8" />
       <module name="multids-mybatis" target="1.8" />
+      <module name="MyClassLoader" target="1.8" />
       <module name="Netty_Demo" target="1.8" />
       <module name="NIO_Demo" target="7" />
+      <module name="Oracle_wallet" target="1.8" />
+      <module name="PortalDemo" target="1.8" />
       <module name="Redis_Demo" target="1.8" />
+      <module name="SpringDemo" target="1.8" />
+      <module name="UnsafeArrayListDemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

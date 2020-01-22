@@ -43,9 +43,7 @@ public class AnnoApplicationContext implements BeanFactory {
     private void handler(File file, String basePackage){
 
         File[] files = file.listFiles( (File dir, String name) -> {
-            if(name.endsWith(".class"))
-                return true;
-            return false;
+            return name.endsWith(".class");
         } );
 
 //        System.out.println(files.length);

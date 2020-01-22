@@ -18,7 +18,7 @@ public class ItemObject {
         return intValue;
     }
     public boolean isEqual(int _intValue){
-        return(intValue==_intValue)?true:false;
+        return intValue == _intValue;
     }
 
 }

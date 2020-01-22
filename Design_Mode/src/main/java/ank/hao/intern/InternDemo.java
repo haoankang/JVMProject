@@ -13,13 +13,13 @@ package ank.hao.intern;
 public class InternDemo {
 
     public static void main(String[] args) {
-        String a = new String("11");
+        String a = "11";
         a.intern();
         String b = "11";
         System.out.println(a==b);
 
-        String c = new String("2")+new String("2");
-        System.out.println(c.toString());
+        String c = "2" + "2";
+        System.out.println(c);
         c.intern();
         String d = "22";
         System.out.println(c==d);

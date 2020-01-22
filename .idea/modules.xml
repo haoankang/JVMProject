@@ -9,9 +9,14 @@
       <module fileurl="file://$PROJECT_DIR$/Dynamic-Datasource/Dynamic-Datasource.iml" filepath="$PROJECT_DIR$/Dynamic-Datasource/Dynamic-Datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/JVM8/JVM8.iml" filepath="$PROJECT_DIR$/JVM8/JVM8.iml" />
       <module fileurl="file://$PROJECT_DIR$/JVMProject.iml" filepath="$PROJECT_DIR$/JVMProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyClassLoader/MyClassLoader.iml" filepath="$PROJECT_DIR$/MyClassLoader/MyClassLoader.iml" />
       <module fileurl="file://$PROJECT_DIR$/NIO_Demo/NIO_Demo.iml" filepath="$PROJECT_DIR$/NIO_Demo/NIO_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Netty_Demo/Netty_Demo.iml" filepath="$PROJECT_DIR$/Netty_Demo/Netty_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Oracle_wallet/Oracle_wallet.iml" filepath="$PROJECT_DIR$/Oracle_wallet/Oracle_wallet.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis_Demo/Redis_Demo.iml" filepath="$PROJECT_DIR$/Redis_Demo/Redis_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDemo/SpringDemo.iml" filepath="$PROJECT_DIR$/SpringDemo/SpringDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UnsafeArrayListDemo/UnsafeArrayListDemo.iml" filepath="$PROJECT_DIR$/UnsafeArrayListDemo/UnsafeArrayListDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bsfit-vdl-demo/bsfit-vdl-demo.iml" filepath="$PROJECT_DIR$/bsfit-vdl-demo/bsfit-vdl-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/custom-ioc/custom-ioc.iml" filepath="$PROJECT_DIR$/custom-ioc/custom-ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/multids-mybatis/multids-mybatis.iml" filepath="$PROJECT_DIR$/multids-mybatis/multids-mybatis.iml" />
     </modules>

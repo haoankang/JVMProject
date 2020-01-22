@@ -24,6 +24,7 @@
         <module>MyClassLoader</module>
         <module>bsfit-vdl-demo</module>
         <module>UnsafeArrayListDemo</module>
+        <module>SpringDemo</module>
     </modules>
 
     <dependencies>

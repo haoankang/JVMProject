@@ -5,6 +5,7 @@ import java.io.RandomAccessFile;
 import java.net.URL;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.charset.StandardCharsets;
 
 public class FileChannelDemo {
     public static void main(String[] args) {
@@ -17,11 +18,11 @@ public class FileChannelDemo {
             int bytesRead = fileChannel.read(buf);
             while(bytesRead != -1){
                 System.out.println("Read "+bytesRead);
-                System.out.print(new String(buf.array(),"utf-8"));
+                System.out.print(new String(buf.array(), StandardCharsets.UTF_8));
                 System.out.println("-----------------------------------");
                 //将Buffer从写模式切换到读模式
                 buf.flip();
-                System.out.print(new String(buf.array(),"utf-8"));
+                System.out.print(new String(buf.array(), StandardCharsets.UTF_8));
 //                System.out.println("_____________");
 //                while (buf.hasRemaining()){
 //                    System.out.print((char)buf.get());

@@ -2,8 +2,8 @@ package ank.hao.mylinkedList;
 
 public interface MyLinkedList {
 
-    public ItemObject find(int value);
-    public void remove(int value);
-    public void add(int value);
-    public int size();
+    ItemObject find(int value);
+    void remove(int value);
+    void add(int value);
+    int size();
 }
