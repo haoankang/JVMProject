@@ -6,6 +6,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 public class StreamDemo {
 
@@ -28,5 +30,13 @@ public class StreamDemo {
             list.add(tree);
         }
 
+        List<String> nameList = list.stream().filter(tree -> tree.getId()%3!=0)
+                .sorted((x,y) -> y.getId()-x.getId())
+                .map(Tree::getName)
+                .collect(Collectors.toList());
+        System.out.println(nameList);
+
+        Random random = new Random();
+        random.doubles().limit(10).forEach(System.out::println);
     }
 }
